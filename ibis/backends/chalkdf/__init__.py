@@ -57,7 +57,14 @@ class Backend(SQLBackend, NoUrl):
         self._chalk_utils = libchalk.utils
         self._chalk_metrics = libchalk.metrics
 
-        self._catalog = self._chalksql.ChalkSqlCatalog()
+        chalkfunction = libchalk.chalkfunction
+        function_registry = (
+            chalkfunction.BASE_FUNCTIONS | chalkfunction.AGGREGATE_FUNCTIONS
+        ).shadowed_by(chalkfunction.CHALK_SQL_FUNCTIONS)
+
+        self._catalog = self._chalksql.ChalkSqlCatalog(
+            function_registry=function_registry
+        )
         self._env = "default"
 
     @property
