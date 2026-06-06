@@ -196,7 +196,7 @@ pure-eval==0.2.3
 pure-sasl==0.6.2
 py-cpuinfo==9.0.0
 py4j==0.10.9.9
-pyarrow==23.0.0
+pyarrow==23.0.1
 pyarrow-hotfix==0.7
 pyasn1==0.6.2
 pyasn1-modules==0.4.2
