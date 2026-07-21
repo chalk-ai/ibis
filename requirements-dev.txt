@@ -170,7 +170,7 @@ parsy==2.2
 pathspec==1.0.4
 patsy==1.0.2
 pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
-pillow==12.1.0
+pillow==12.3.0
 pins==0.9.0
 pkginfo==1.12.1.2
 platformdirs==4.5.1
