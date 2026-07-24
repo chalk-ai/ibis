@@ -258,7 +258,7 @@ scipy==1.15.3 ; python_full_version < '3.11'
 scipy==1.17.0 ; python_full_version >= '3.11'
 seaborn==0.13.2
 send2trash==2.1.0
-setuptools==80.10.2
+setuptools==83.0.0
 shapely==2.1.2
 singlestoredb==1.16.8
 six==1.17.0
